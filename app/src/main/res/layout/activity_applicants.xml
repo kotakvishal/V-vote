@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboards.ApplicantsActivity">
+<include android:id="@+id/action_bar_applicants"
+    layout="@layout/applicants_action_bar"/>
+    <TextView
+        android:id="@+id/applicants_list_heading_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/applicantsListString"
+        android:textColor="@color/primaryDarkColor"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_below="@+id/action_bar_applicants"
+        android:layout_centerHorizontal="true"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/applicants_list_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/applicants_list_heading_textview"/>
+</RelativeLayout>

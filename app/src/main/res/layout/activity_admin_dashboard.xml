@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboards.AdminDashboard">
+
+    <include
+        android:id="@+id/action_bar_admin_dashboard"
+        layout="@layout/admin_dashboard_action_bar" />
+    <TextView
+        android:id="@+id/active_users_list_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ActiveUsersString"
+        android:layout_below="@+id/action_bar_admin_dashboard"
+        android:textColor="@color/primaryDarkColor"
+        android:textStyle="bold"
+        android:textSize="36sp"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/active_users_list_recyclerview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/active_users_list_textview" />
+    </RelativeLayout>

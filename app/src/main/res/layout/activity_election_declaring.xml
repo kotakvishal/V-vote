@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dashboards.ElectionDeclaringActivity">
+    <TextView
+        android:id="@+id/heading_commissioner_db_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/primaryDarkColor"
+        android:layout_margin="4dp"
+        android:text="@string/heading_commissioner_string"/>
+    <TextView
+        android:id="@+id/title_tv_commission_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title_string"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:layout_below="@+id/heading_commissioner_db_tv"
+        android:layout_margin="8dp"
+        android:textSize="28sp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/titleTextField"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title_tv_commission_db"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/election_title_hint">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/title_et_cdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/date_tv_commission_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/elections_date_tv"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:layout_below="@+id/titleTextField"
+        android:layout_margin="8dp"
+        android:textSize="28sp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/electionDateTextField"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/date_tv_commission_db"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/election_date_hint">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/elecctionDate_et_cdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/candidate_1_tv_commission_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/candidate_1_tv"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:layout_below="@+id/electionDateTextField"
+        android:layout_margin="8dp"
+        android:textSize="28sp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/candidate_1_TextField"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/candidate_1_tv_commission_db"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/candidate_1_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/candidate_1_et_cdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#616161"
+            tools:ignore="TextContrastCheck" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <TextView
+        android:id="@+id/candidate_2_tv_commission_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/candidate_2_tv"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:layout_below="@+id/candidate_1_TextField"
+        android:layout_margin="8dp"
+        android:textSize="28sp"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/candidate_2_TextField"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/candidate_2_tv_commission_db"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/candidate_2_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/candidate_2_et_cdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#616161" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/results_date_tv_commission_db"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resultsDateString"
+        android:textStyle="bold"
+        android:textColor="@color/primaryColor"
+        android:layout_below="@+id/candidate_2_TextField"
+        android:layout_margin="8dp"
+        android:textSize="28sp"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/results_date_TextField"
+        android:layout_width="300dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/results_date_tv_commission_db"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:hint="@string/resultsDate_hint">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/results_et_cdb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#616161" /></com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/submit_button_db"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/results_date_TextField"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/button_style_2"
+        android:text="@string/save_details_string_db"
+        android:textColor="@color/white" />
+    <ProgressBar
+        android:id="@+id/progress_bar_db"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="invisible"
+        android:layout_below="@id/submit_button_db"/>
+</RelativeLayout>

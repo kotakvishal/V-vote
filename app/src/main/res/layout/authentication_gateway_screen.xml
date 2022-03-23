@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AuthenticationGatewayScreen">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ballot_img_auth_gateway_screen"
+        android:layout_width="256dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/design_string"
+        android:layout_gravity="center"
+        android:src="@drawable/ballot_image"
+        tools:ignore="ImageContrastCheck" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/admin_button_auth_gateway_screen"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:text="@string/admin_string_for_button"
+        android:fontFamily="sans-serif-medium"
+        android:textColor="@color/primaryColor"
+        android:textSize="20sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/commission_button_auth_gateway_screen"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:layout_margin="4dp"
+        android:padding="8dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/commission_string_for_button"
+        android:textColor="@color/primaryColor"
+
+        android:textSize="20sp" />
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/user_button_auth_gateway_screen"
+        android:layout_width="256dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/button_style"
+        android:gravity="center"
+        android:padding="8dp"
+        android:layout_margin="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/user_string_for_button"
+        android:textColor="@color/primaryColor"
+        android:textSize="20sp" />
+</LinearLayout>

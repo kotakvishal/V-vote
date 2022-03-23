@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.v_vote">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Vvote">
+        <activity
+            android:name=".dashboards.ElectionDeclaringActivity"
+            android:exported="true" >
+                    </activity>
+        <activity
+            android:name=".dashboards.ApplicantsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dashboards.ApplicantsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".signupscreens.UserSignUpScreen"
+            android:exported="false" />
+        <activity
+            android:name=".signupscreens.CommissionerSignUpScreen"
+            android:exported="true" />
+        <activity
+            android:name=".dashboards.CommissionerDashboard"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".dashboards.UserDashboard"
+            android:exported="true" >
+        </activity>
+        <activity
+            android:name=".dashboards.AdminDashboard"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".signinscreens.UserSignInScreen"
+            android:exported="false" />
+        <activity
+            android:name=".signinscreens.CommissionerSignInScreen"
+            android:exported="false" />
+        <activity
+            android:name=".signinscreens.AdminSignInScreen"
+            android:exported="false" />
+        <activity
+            android:name=".AuthenticationGatewayScreen"
+            android:exported="false" />
+        <activity
+            android:name=".Splash"
+            android:exported="true">
+
+        </activity>
+    </application>
+
+</manifest>

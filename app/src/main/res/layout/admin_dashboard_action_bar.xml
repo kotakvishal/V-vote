@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:background="@color/primaryDarkColor">
+
+    <TextView
+        android:id="@+id/admin_dashboard_acb_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/admin_dashboard_string_for_button"
+        android:fontFamily="sans-serif-medium"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:textColor="@color/white"
+        android:layout_margin="4dp" />
+
+    <ImageView
+        android:id="@+id/admin_dashboard_acb_imageview"
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:src="@mipmap/ic_notification"
+        android:layout_toEndOf="@+id/admin_dashboard_acb_textview"
+        android:contentDescription="@string/design_string" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_toEndOf="@+id/admin_dashboard_acb_imageview"
+        android:layout_width="56dp"
+        android:layout_height="56dp"/>
+    <TextView
+        android:id="@+id/refresh_acb_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/refresh_string_for_button"
+        android:layout_toEndOf="@+id/view"
+        android:textColor="@color/white"
+
+        android:textStyle="bold" />
+</RelativeLayout>
